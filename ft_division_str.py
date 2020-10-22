@@ -7,5 +7,6 @@ def ft_len(str):
 
 def ft_division_str(str):
     length = ft_len(str)
-    print(str[:length // 2 + length % 2])
-    print(str[length // 2 + length % 2:])
+    str1 = str[:length // 2 + length % 2]
+    str2 = str[length // 2 + length % 2:]
+    return str2 + str1

@@ -6,7 +6,6 @@ def ft_len(str):
 
 
 def ft_count_words(str):
-    wordcount = 0
     length = ft_len(str)
     f = False
     count = 0
@@ -17,4 +16,3 @@ def ft_count_words(str):
         if str[i] == " ":
             f = False
     return count
-

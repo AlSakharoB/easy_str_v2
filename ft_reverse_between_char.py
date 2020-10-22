@@ -30,8 +30,6 @@ def ft_reveres_between_char(char, str):
     j1 = 0
     i = 0
     j = 0
-    rev_bet_char = ""
-    new_str = ""
     while count2 < 1 and i < length - 1:
         if str[i] == char:
             i1 = i
