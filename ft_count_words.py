@@ -5,14 +5,19 @@ def ft_len(str):
     return length
 
 
-def ft_count_words(str):
-    length = ft_len(str)
-    f = False
-    count = 0
-    for i in range(length):
-        if f == False and str[i] != " ":
-            f = True
-            count += 1
-        if str[i] == " ":
-            f = False
-    return count
+def ft_count_words(a):
+    x = 0
+    d = ft_len(a)
+    i = 0
+    if a[0] == ' ':
+        while i < d:
+            if a[i] == ' ' and a[i - 1] != ' ':
+                x = x + 1
+            i = i + 1
+        return x
+    else:
+        while i < d:
+            if a[i] == ' ' and a[i - 1] != ' ':
+                x = x + 1
+            i = i + 1
+        return x + 1
